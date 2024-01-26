@@ -44,6 +44,7 @@ export default async function whisperShell
 try {
 
   // shell.cd(__dirname + WHISPER_CPP_PATH);
+  console.log(WHISPER_CPP_PATH)
   shell.cd(WHISPER_CPP_PATH);
 
   // ensure command exists in local path
@@ -62,6 +63,6 @@ try {
 
   }
 } catch (error) {
-  console.log("error caught in try catch block")
+  console.log(error)
   throw error;
 }
